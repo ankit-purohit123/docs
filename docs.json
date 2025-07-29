@@ -14,18 +14,11 @@
         "tab": "Introduction",
         "groups": [
           {
-            "group": "Initial",
+            "group": "Docs",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+
+              "supabase"
+              
             ]
           }
         ]
