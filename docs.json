@@ -12,15 +12,23 @@
     "tabs": [
       {
         "tab": "Introduction",
-        "groups": [
-          {
-            "group": "Docs",
-            "pages": [
-
-              "supabase"
-              
-            ]
-          }
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "tab": "Tips & Tricks",
+        "pages": [
+          "idea-to-app",
+          "prompt-basics",
+          "visual-editor",
+          "troubleshoot"
+        ]
+      },
+      {
+        "tab": "Agent Store",
+        "pages": [
+          "supabase"
         ]
       }
     ]

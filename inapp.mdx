@@ -1,0 +1,170 @@
+---
+title: "InApp Purchase Agent"
+description: "Integrate a full-featured backend into your Tile.dev application with Supabase"
+---
+
+Tile.dev's native Supabase integration allows you to manage both your front-end UI and your back-end database through a single, prompt-driven interface. Build full-stack apps efficiently without ever leaving Tile.dev.
+
+## Overview
+
+Supabase is an open-source alternative to Firebase that provides a hosted PostgreSQL database with real-time capabilities, user authentication and serverless functions. When you connect Supabase to your Tile.dev app, you instantly gain a scalable, production-ready backend without writing boilerplate code or configuring servers.
+
+### Key Features Unlocked
+
+<CardGroup cols={3}>
+<Card title="Database" icon="database">
+  Store and query your app data using full SQL. Tile.dev can automatically generate schema and tables from your prompts.
+</Card>
+
+<Card title="User Authentication" icon="key">
+  Securely manage sign-ups, logins, and access control. Add pre-built flows with a single prompt.
+</Card>
+
+<Card title="Edge Functions" icon="code">
+  Run custom backend logic using JavaScript/TypeScript on Supabase infrastructure.
+</Card>
+</CardGroup>
+
+## Why Use Supabase with Tile.dev?
+
+With Tile.dev, there's no need to juggle separate tools for your front-end and back-end. By chatting with Tile.dev's AI, you can build your UI components, set up your Supabase database, and implement backend logic all without leaving the prompt interface.
+
+<Note>
+**Example Prompt**: "Add a contact form and store submissions in the database."
+
+Tile.dev will generate the contact form UI, create a Supabase table for storing submissions, and connect the form to the database automatically.
+</Note>
+
+## Getting Started
+
+<Steps>
+<Step title="Create a Supabase Account">
+  Sign up at [https://supabase.com](https://supabase.com)
+</Step>
+
+<Step title="Create a Supabase Project">
+  Click on **+ New Project**, fill out the required details, and wait for setup to complete.
+</Step>
+
+<Step title="Connect Supabase in Tile.dev">
+  1. Open the **Agent Store** tab in the Tile.dev editor
+  2. Click **Connect Supabase**
+  3. Choose an existing Supabase project or create a new one
+  4. Tile.dev will automatically configure the connection
+  
+  <Check>
+  You'll see your project's details on screen once connected.
+  </Check>
+</Step>
+</Steps>
+
+## Adding User Authentication
+
+### Email/Password Auth
+
+Use this prompt to add basic authentication:
+
+```
+Add login and signup with email and password
+```
+
+Tile.dev will:
+- Generate login/signup screens
+- Wire them to Supabase Auth
+- Handle redirection and user session management
+
+<Tip>
+**Testing tip**: Disable email confirmation while testing by going to Supabase Dashboard > Auth > Settings > Email and disabling "Confirm email".
+</Tip>
+
+### Social Logins
+
+<Steps>
+<Step title="Configure OAuth in Supabase">
+  1. In Supabase Dashboard, go to **Auth > Providers**
+  2. Enable Google and add OAuth credentials
+</Step>
+
+<Step title="Add to your app">
+  Prompt Tile.dev:
+  ```
+  Add Google sign-in button to login page
+  ```
+  
+  Tile.dev will update your login UI and wire it up to Supabase OAuth.
+</Step>
+</Steps>
+
+## Managing Data
+
+Use prompts to define data structures and UI in one step.
+
+### Example Workflow
+
+```
+Add a feedback form with message and rating, and store in database.
+```
+
+Tile.dev will:
+1. Create the form UI
+2. Suggest SQL to create a feedback table
+3. Ask you to run the SQL in Supabase
+4. After confirmation, bind the form to the new table
+
+### CRUD Operations
+
+Try these example prompts:
+
+<CodeGroup>
+```text Create
+Create a blog post form with title and content
+```
+
+```text Read
+Display a list of all posts from the database
+```
+
+```text Update & Delete
+Allow users to edit and delete their posts
+```
+</CodeGroup>
+
+Tile.dev handles UI generation, SQL schema creation, connecting UI to Supabase tables, and auth-based filtering automatically.
+
+## Supabase Dashboard
+
+You can also manage your backend manually when needed:
+
+<AccordionGroup>
+<Accordion title="Table Management">
+  View and edit tables in the Table Editor for direct data manipulation.
+</Accordion>
+
+<Accordion title="SQL Operations">
+  Run SQL in SQL Editor with AI assistance for complex queries.
+</Accordion>
+
+<Accordion title="Data Import/Export">
+  Import and export CSV files for bulk data operations.
+</Accordion>
+
+<Accordion title="Security">
+  Configure RLS (Row Level Security) for secure, user-based access control.
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Advanced Features" icon="rocket">
+  Explore real-time subscriptions and advanced database features.
+</Card>
+
+<Card title="Deployment" icon="cloud">
+  Learn how to deploy your full-stack Tile.dev app to production.
+</Card>
+</CardGroup>
+
+<Note>
+**Pro tip**: You can always ask Tile.dev to "Add user favorites feature" or "Show only items created by logged-in user" and it will handle the implementation automatically.
+</Note>
