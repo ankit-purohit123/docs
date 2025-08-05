@@ -9,29 +9,30 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Introduction",
-        "pages": [
-          "index"
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Tips & Tricks",
+            "pages": [
+              "idea-to-app",
+              "prompt-basics",
+              "visual-editor",
+              "troubleshoot"
+            ]
+          },
+          {
+            "group": "Agent Store",
+            "pages": [
+              "supabase"
+            ]
+          }
         ]
-      },
-      {
-        "tab": "Tips & Tricks",
-        "pages": [
-          "idea-to-app",
-          "prompt-basics",
-          "visual-editor",
-          "troubleshoot"
-        ]
-      },
-      {
-        "tab": "Agent Store",
-        "pages": [
-          "supabase"
-        ]
-      }
-    ]
+      
   },
   "logo": {
     "light": "/logo/light.svg",
