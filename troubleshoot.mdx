@@ -1,77 +1,41 @@
 ---
-title: "Debugging and Fixing Issues"
-description: "How to fix common app issues using Tile.dev's Attempt Fix and manual code editing"
+title: "TroubleShooting"
+description: "How to fix common issues and get back to building with Tile.dev"
 ---
 
-# 🐞 Debugging and Fixing Issues in Tile.dev
+Tile.dev helps you build apps faster with AI, but like any creative tool, things can go off track. Maybe your app doesn't behave as expected, or a feature breaks. This guide will walk you through how to fix common issues and get back to building.
 
-Tile.dev helps you build apps faster with AI—but like any creative tool, things can go off track.  
-Maybe your app doesn’t behave as expected, or a feature breaks.
+## Step 1: Use the **Attempt Fix** Button First
 
-This guide walks you through how to fix common problems and get back to building.
+Tile automatically detects if the agent made an error while generating the app and shows the **"Attempt Fix"** button. All you need to do is to click on the 'Attempt Fix' button and send the message to the agent. This is the quickest & easiest way to resolve bugs in your app.
 
----
+**What It Does:**
+* Automatically captures the on-screen error message
+* Inserts the error into the prompt box
+* Prepares a ready-to-send prompt to help the agent **understand and fix the issue**
 
-## ✅ Step 1: Use the **Attempt Fix** Button First
+Just review the generated prompt and hit **Send**. The AI will try to debug and regenerate your app accordingly.
 
-When the agent detects an error, Tile automatically shows the **Attempt Fix** button.
+If "Attempt Fix" doesn't work after 1–2 attempts, stop there and move to Step 2
 
-### What It Does:
+## Step 2: Investigate Bugs and Edit Code
 
-- Captures the current on-screen error
-- Inserts it into the prompt box
-- Prepares a clean, debug-ready message for the AI agent
+You should edit the code in these situations:
+1. The **"Attempt Fix"** button doesn't resolve the issue.
+2. Your app runs, but something still feels off or isn't working as expected.
 
-All you need to do is:
+When you encounter these scenarios, take the following steps:
+* **Review your prompt** to ensure it's clear and not overloaded with instructions.
+* **Test individual components or screens** to isolate where the problem occurs.
+* **Inspect the app's logic** - check if screens and buttons are connected and functioning as intended.
+* **Use visuals** like screenshots to clarify and communicate what's broken or unexpected.
 
-1. Click **Attempt Fix**  
-2. Review the generated prompt  
-3. Hit **Send**
+Editing the code directly allows you to address subtle bugs and fine-tune your app's behavior when automated fixes aren't enough.
 
-The AI will try to debug and regenerate the broken part of your app.
+You can edit code by clicking on 'Edit code' button on the properties panel.
 
-> ⚠️ If it doesn’t work after 1–2 attempts, move to Step 2.
+![image](./images/troubleshoot.png)
 
----
+## Final Tip: Debugging Is Part of Building
 
-## 🛠 Step 2: Investigate and Edit Code Manually
-
-Use this when:
-
-1. **Attempt Fix doesn’t solve the issue**
-2. Your app runs, but something feels off or not quite right
-
-### What to Do:
-
-- Review your prompt for clarity and simplicity  
-- Test components individually to isolate the issue  
-- Inspect logic: check if screens, buttons, and links work as expected  
-- Use screenshots to show and describe the issue to the agent
-
-> 🧠 Pro Tip: Clear visual references help agents troubleshoot faster.
-
----
-
-## ✏️ How to Edit Code
-
-You can directly edit the code when needed:
-
-- Click the **Edit Code** button in the **Properties Panel**
-- Make changes to logic, data bindings, or UI manually
-- Save your updates and preview the app again
-
-![Edit Code Button](./images/troubleshoot.png)
-
----
-
-## 💬 Final Tip: Debugging Is Part of Building
-
-Every builder—AI-assisted or not—runs into bugs. What matters is how quickly you recover.
-
-With tools like **Attempt Fix**, direct code editing, and smart prompting, Tile.dev gives you the flexibility to:
-
-- Fix issues fast  
-- Learn what went wrong  
-- Keep momentum going
-
-Keep building. We’ve got your back.
+Every builder, AI-assisted or not, runs into issues. What matters is moving through them quickly and confidently. With features like **Attempt Fix **and smart prompting, **Tile.dev** helps you recover fast and stay productive.

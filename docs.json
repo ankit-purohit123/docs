@@ -13,13 +13,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Tips & Tricks",
-            "pages": [
-              "idea-to-app",
+              "index","idea-to-app",
               "prompt-basics",
               "visual-editor",
               "troubleshoot"

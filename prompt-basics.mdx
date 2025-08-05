@@ -1,64 +1,72 @@
 ---
-title: "Prompting Best Practices"
-description: "How to write effective prompts to build better apps with Tile.dev"
+title: "How to Prompt"
 ---
 
-# 🧠 Best Practices for Prompting
+## 1. Best Practices for Prompting
+### How to Write Effective Prompts to Build Apps on Tile.dev
+A good prompt is like giving clear directions to a teammate—specific, focused, and easy to follow. The more precise your input, the better the app Tile.dev will generate for you.
 
-A good prompt is like giving clear directions to a teammate—**specific**, **focused**, and **easy to follow**.  
-The more precise your input, the better the app Tile.dev will generate.
+## Start with One Clear Objective
 
----
+**Less Effective:**
+"Build an e-commerce app with login, admin dashboard, product management, payments, reviews, coupons, and delivery tracking."
 
-## 🎯 Start with One Clear Objective
+**Better:**
+"Start with an e-commerce homepage and product list. Add a login screen for users."
 
-### ❌ Less Effective:
+**Tackle one part at a time.** You can always build on top of it.
 
-> “Build an e-commerce app with login, admin dashboard, product management, payments, reviews, coupons, and delivery tracking.”
+## Use Clear, Structured Language
 
-### ✅ Better:
+Avoid long paragraphs. Instead, break your ideas into bullet points or short steps.
 
-> “Start with an e-commerce homepage and product list. Add a login screen for users.”
+**Example:**
+"I'm building a task manager app.
+* Users can sign up and log in
+* They can create, edit, and delete tasks
+* Tasks can be marked as complete
+* Tasks should be shown in a list"
 
-🧩 Tackle **one part at a time**. You can always build on top of it.
+This makes it easier for the AI to understand what you're trying to build.
 
----
+## 2.Prompt Length Guidelines
 
-## ✍️ Use Clear, Structured Language
+### Why This Matters
 
-Avoid long paragraphs. Instead, break ideas into bullet points or simple steps.
+Our AI agent is designed to help you generate apps quickly and efficiently using natural language prompts. However, **very large or overly detailed prompts** can sometimes cause issues with the system's performance, leading to failed generations or unresponsive behavior.
 
-### Example:
+### Common Symptoms
 
-> “I’m building a task manager app.
->
-> - Users can sign up and log in  
-> - They can create, edit, and delete tasks  
-> - Tasks can be marked as complete  
-> - Tasks should be shown in a list”
+* The agent fails to respond
+* App generation stalls or crashes
+* Error messages such as "agent not working" or "internal processing issue"
 
-✅ This makes it easier for the AI to follow and generate accurately.
+### Best Practices
 
----
+* **Keep prompts concise**: Focus on the core idea of your app. Example: "Build a to-do app with login, task creation, and reminders."
+* **Break down complex ideas**: If your app idea is large, split it into smaller parts and build incrementally. Examples:
+* Start with "Create a login page with email/password," → Then "Add a dashboard to show tasks"
+   * Use structured bullets or numbered points for clarity, instead of long paragraphs.
 
-# 📏 Prompt Length Guidelines
+**What to Avoid**
+* Very long descriptions with multiple features, flows, and edge cases in one go.
+* Pasting documentation or multi-page requirements in a single prompt.
+* Asking for multiple full app variations in one prompt.
 
-## 🧐 Why This Matters
+## 3. Be Specific with Your Requests
 
-Our AI agent is optimized for **quick, natural-language app creation**.  
-But overly long or complex prompts can lead to performance issues:
+Avoid vague terms like
+"Make it look nice" or "Add some features"
 
-### 🚨 Common Symptoms:
+Use clear directions like
+"Add a search bar at the top" "Use cards to display each task with a title and due date" "Use a light theme and rounded buttons for styling"
 
-- The agent fails to respond  
-- App generation stalls or crashes  
-- Error messages like: “Agent not working” or “Internal processing issue”
+**Example of a Good Prompt**
+"Build an e-commerce app homepage with a product list and search bar."
 
----
+**Example of a Problematic Prompt**
+"Build a fully functional e-commerce app with user authentication, admin panel, product CRUD, payment integration, multi-language support, coupon system, and mobile responsiveness across all pages. Also include a CMS for blog content."
 
-## ✅ Best Practices
+## We are Here to Help
 
-- **Keep prompts concise**: Focus on your core idea.
-
-```prompt
-"Build a to-do app with login, task creation, and reminders."
+If you're unsure how to phrase your prompt, or the agent isn't responding as expected, feel free to contact our support team through our community channel on discord or contact us via email on support@tile.dev

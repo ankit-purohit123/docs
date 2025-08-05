@@ -1,41 +1,65 @@
 ---
-title: "Supabase Agent"
-description: "Learn how to integrate Supabase with your Tile.dev app"
+title: "Supabase"
+description: "Connect Supabase to your Tile.dev app for a scalable, production-ready backend"
 ---
 
-# Supabase Integration in Tile.dev
+Supabase is an open-source alternative to Firebase that provides a hosted PostgreSQL database with real-time capabilities, user authentication and serverless functions. When you connect Supabase to your Tile.dev app, you instantly gain a scalable, production-ready backend without writing boilerplate code or configuring servers. Best of all, our dedicated Supabase Agent seamlessly handles the integration between your backend and your Tile.dev app.
 
-Supabase is an open-source alternative to Firebase that provides a hosted PostgreSQL database with real-time capabilities, user authentication, and serverless functions. When you connect Supabase to your Tile.dev app, you instantly gain a scalable, production-ready backend without writing boilerplate code or configuring servers.
+## Key Features Unlocked by Supabase Integration:
 
-Best of all, our dedicated **Supabase Agent** seamlessly handles the integration between your backend and your Tile.dev app.
+* **Database (PostgreSQL):** Store and query your app data using full SQL. Tile.dev can automatically generate schema and tables from your prompts.
+* **User Authentication:** Securely manage sign-ups, logins, and access control. Add pre-built flows (email/password, OAuth, etc.) with a single prompt.
+* **Edge Functions (Serverless):** Run custom backend logic using JavaScript/TypeScript on Supabase infrastructure. Tile.dev will generate and deploy these functions as needed.
 
-## 🔑 Key Features Unlocked by Supabase Integration
-
-- **Database (PostgreSQL):** Store and query your app data using full SQL. Tile.dev can automatically generate schema and tables from your prompts.
-- **User Authentication:** Securely manage sign-ups, logins, and access control. Add pre-built flows (email/password, OAuth, etc.) with a single prompt.
-- **Edge Functions (Serverless):** Run custom backend logic using JavaScript/TypeScript on Supabase infrastructure. Tile.dev will generate and deploy these functions as needed.
-
----
-
-## 🚀 Getting Started: Connect Supabase to Tile.dev
+## Getting Started: Connect Supabase to Tile.dev
 
 ### 1. Create a Supabase Account
-- Sign up at [https://supabase.com](https://supabase.com)
+* Sign up at https://supabase.com
 
 ### 2. Create a Supabase Project
-- Click on **+ New Project**, fill out the required details, and wait for setup to complete.
+* Click on **+ New Project**, fill out the required details, and wait for setup to complete.
 
 ### 3. Connect Supabase in Tile.dev
-1. Open the **Agent Store** tab in the Tile.dev editor.  
-2. Click **Connect Supabase**.  
-3. Choose an existing Supabase project or create a new one.  
-4. Tile.dev will automatically configure the connection and display your project details.
+1. Open the **Agent Store** tab in the Tile.dev editor.
+2. Click **Connect Supabase**.
+3. Choose an existing Supabase project or create a new one.
+4. Tile.dev will automatically configure the connection and you will get project's details on your screen.
 
 Once connected, you can begin using Supabase features in your app immediately.
 
----
-
-### 💬 Example Prompt
-
-```prompt
+**Example Prompt:**
 "Add a contact form and store submissions in the database."
+
+Tile.dev will:
+* Generate the contact form UI
+* Create a Supabase table for storing submissions
+* Connect the form to the database automatically
+
+<Tip>
+To use Supabase in your first prompt, follow these steps:
+* Ask the Agent to generate a "Blank App"
+* Connect to Supabase
+* Then provide your actual prompt
+</Tip>
+
+## Adding User Authentication via Supabase
+
+### Email/Password Auth
+
+**Prompt:**
+"Add login and signup with email and password"
+
+Tile.dev will:
+* Generate login/signup screens
+* Wire them to Supabase Auth
+* Handle redirection and user session management
+
+You can test user signups via:
+* The new login form in your app
+* Supabase Dashboard > Authentication > Users
+
+<Tip>
+Disable email confirmation while testing:
+* Go to Supabase Dashboard > Auth > Settings > Email
+* Disable "Confirm email"
+</Tip>
